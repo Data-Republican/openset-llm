@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Shell scripts parse
-        run: for f in install.sh serve start scripts/package.sh scripts/verify-dispatch.sh scripts/cross-aarch64.sh patches/apply.sh docker/entrypoint.sh bench/box.sh bench/jobs.sh; do bash -n "$f"; done
+        run: for f in install.sh serve start scripts/package.sh scripts/verify-dispatch.sh scripts/cross-aarch64.sh patches/apply.sh docker/entrypoint.sh bench/box.sh bench/jobs.sh bench/quick.sh; do bash -n "$f"; done
       - name: Python compiles
         run: python3 -m py_compile scripts/graft_mtp.py bench/*.py
       - name: Files the README links to exist

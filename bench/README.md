@@ -7,6 +7,10 @@ script that prints the tables. Raw logs are not in this repo.
 You need one or more x86 Linux boxes with AVX-512 (we used cloud boxes: 8 vCPU / 8 GB Ice Lake VMs, and an 8 vCPU / 16 GB
 AMD EPYC 9354P box), sudo or root, ~15 GB of free disk, and a few hours per box. Compare arms only within one box.
 
+**Just want a number from your own machine?** `./bench/quick.sh` (add `--plain` for plain decoding too): it starts its
+own server, runs 6 of the prompts below at 128 tokens and prints a block you can paste into an issue. A few minutes, no
+sudo, no rivals. The rest of this page is the full harness.
+
 ## Run it
 
 1. **On each box, put this package at `~/release`** (a clean checkout of the commit you test; `bench/` is inside it).

@@ -4,6 +4,8 @@ All notable changes to openset-llm. Dates are YYYY-MM-DD.
 
 ## Unreleased
 
+- `bench/quick.sh`: a 3-minute speed check that prints a block to paste into a "Measurement on my machine" issue.
+
 ## 0.1.0 (2026-11-25)
 
 First public release.

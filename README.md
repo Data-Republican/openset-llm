@@ -401,7 +401,8 @@ publish (the recorded agent session, the broader prompt set, the earlier build):
 ## Contributing
 
 Bug reports, measurements on other CPUs and patches are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). A report is
-most useful with the output of `./install.sh --check` and the line `./serve` prints at start. Security issues:
+most useful with the output of `./install.sh --check` and the line `./serve` prints at start. For speed on your CPU,
+`./bench/quick.sh --plain` prints a ready-to-paste block in about five minutes. Security issues:
 [SECURITY.md](SECURITY.md). Changes per release: [CHANGELOG.md](CHANGELOG.md).
 
 ## Licence
